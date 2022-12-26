@@ -1,0 +1,133 @@
+.connect{
+    display: flex;
+    flex-direction: row;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        
+        .sectionTitle{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            color: var(--primary-color);
+        }
+        .desc{
+            margin-top: 16px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--white-color)
+        }
+
+        .media{
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: 24px;
+
+            *{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        max-width: 479px;
+        .rightTitle{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--white-color);
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            gap: 16px;
+            
+            input[type=text], input[type=email]{
+                height: 62px;
+                background-color: #f5f5f517;
+                color: var(--white-color);
+                border-radius: 8px;
+                padding: 15px;
+                border: none;
+                font-family: var(--font-family);
+            }
+
+            textarea{
+                height: 98px;
+                background-color: #f5f5f517;
+                color: var(--white-color);
+                border-radius: 8px;
+                resize: none;
+                border: none;
+                padding: 15px;
+                font-family: var(--font-family);
+            }
+
+            button{
+                width: 174px;
+                height: 50px;
+                background: var(--primary-color);
+                border-radius: 8px;
+                color: var(--white-color);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                cursor: pointer;
+                border: none;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .connect{
+        display: flex;
+        flex-direction: column;
+    
+        .right{
+            margin-top: 50px;
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .left{
+            align-items: flex-start;
+            .desc {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .connect{
+        .left{
+            .sectionTitle{
+                font-size: 28px;
+            }
+            .desc{
+                font-size: 15px;
+            }
+        }
+        .right{
+            .rightTitle{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}

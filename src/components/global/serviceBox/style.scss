@@ -1,0 +1,36 @@
+.ServiceBox{
+    width: 341px;
+    height: 338px;
+    border: 3px solid #7562E0;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 16px;
+
+    .content{
+        margin: 75px 30px 75px 30px;
+        .head{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+
+            .title{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 185%;
+                font-family: var(--font-family);
+                color: var(--white-color);
+            }
+        }
+        .body{
+            .description{
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 32px;
+                text-align: center;
+                font-family: var(--font-family);
+                color: var(--white-color);
+            }
+        }
+    }
+
+}

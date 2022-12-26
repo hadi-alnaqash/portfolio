@@ -1,0 +1,26 @@
+.services{
+    .sectionTitle{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: var(--primary-color);
+        margin-bottom: 32px;
+    }
+    .boxes{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 22px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 19px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .services{
+        .sectionTitle{
+            font-size: 25px;
+        }
+    }
+}

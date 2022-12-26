@@ -1,0 +1,206 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    // padding: 64px 136px;
+    position: relative;
+    margin-top: 100px;
+    
+    .right{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+
+        .circle{
+            width: 486px;
+            height: 486px;
+            background-color: #7562E0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        img{
+            width: 570px;
+            height: 570px;
+            position: absolute;
+            top: -41px;
+        }
+
+    }
+    .left{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        flex: 1;
+        margin-top: 2rem;
+        .text{
+            p{
+                font-family: var(--font-family);
+                color: var(--light-color);
+
+                &:first-child{
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+
+                &:nth-child(2){
+                    font-weight: 600;
+                    font-size: 52px;
+                    line-height: 78px;
+                }
+
+                &:nth-child(3){
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            margin-top: 29px;
+            cursor: pointer;
+            button{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                font-weight: 600;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-right: 6px;
+                font-family: var(--font-family);
+                border-radius: 8px;
+                padding: 12px 34px;
+                background-color: var(--primary-color);
+                margin-right: 32px;
+                border: none;
+                overflow: hidden;
+                border: 0.1px solid #7562E0;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: transparent;
+                    
+                }
+            }
+        }
+
+    }
+
+    .line{
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0px;
+        top: 424px;
+        background: #181824;
+    }
+
+}
+
+
+@media screen and (max-width: 1350px){
+    .home{
+        flex-direction: column;
+        margin: 0;
+        .right{
+            margin-top: 5rem;
+            img{
+                top: 330px
+            }
+        }
+        .line{
+            top: 795px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .home{
+        .left{
+            .text{
+                p{
+                    &:first-child{
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+    
+                    &:nth-child(2){
+                        font-size: 40px;
+                        line-height: 60px;
+                    }
+    
+                    &:nth-child(3){
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .buttons button{
+                padding: 13px 17px;
+                font-size: 12px;
+
+            }
+        }
+
+        .right{
+            img{
+                width: 375px;
+                height: 375px;
+            }
+            .circle{
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .line{
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (max-width: 460px){
+
+    .home{
+        .left{
+            .text{
+                p{
+                    &:first-child{
+                        font-size: 20px;
+                        line-height: 10px;
+                    }
+    
+                    &:nth-child(2){
+                        font-size: 30px;
+                        line-height: 55px;
+                    }
+    
+                    &:nth-child(3){
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+
+            .buttons button{
+                padding: 13px 17px;
+                font-size: 12px;
+
+            }
+        }
+
+    }
+}
+
+
+
+

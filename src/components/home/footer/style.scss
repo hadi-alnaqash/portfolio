@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    .by{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+    }
+    
+    .links{
+        display: flex;
+        justify-content: space-between;
+        max-width: 130px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer{
+        .by{
+            flex-direction: column;
+            p{
+                padding: 5px 0;
+            }
+        }
+    }
+}
