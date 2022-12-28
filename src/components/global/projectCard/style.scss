@@ -10,6 +10,16 @@
 
         .image{
             margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img{
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%
+            }
         }
         .title{
             font-weight: 600;

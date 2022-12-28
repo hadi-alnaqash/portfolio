@@ -1,6 +1,6 @@
 import './style.scss'
 
-const ProjectCard = ({img}) => {
+const ProjectCard = ({img, liveURL, repoURL}) => {
   return (
     <div className='projectCard'>
         <div className="content">
@@ -12,8 +12,8 @@ const ProjectCard = ({img}) => {
                 A live Geolocation app for finding tweets and twitter users around you.
             </p>
             <div className="buttons">
-                <button className='live'>View Live</button>
-                <button className='repo'>Github Repo</button>
+               <a href={liveURL}><button className='live'>View Live</button></a>
+               <a href={repoURL}><button className='repo'>Github Repo</button></a>
             </div>
         </div>
     </div>

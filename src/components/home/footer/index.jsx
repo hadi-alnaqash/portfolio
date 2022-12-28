@@ -13,9 +13,9 @@ const Footer = () => {
             <p>Data Analyst</p>
         </div>
         <div className="links">
-            <Facebook />
-            <Instagram />
-            <Email />
+          <a href="https://www.facebook.com/"><Facebook /></a> 
+          <a href="https://www.instagram.com/"><Instagram /></a> 
+          <a href="https://mail.google.com/"><Email /></a> 
         </div>
     </div>
   )
