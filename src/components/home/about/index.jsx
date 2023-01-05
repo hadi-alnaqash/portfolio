@@ -42,25 +42,25 @@ export const About = () => {
             >
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <SkillBox logo={<WebDev />} title={"UI & UX DESIGNING"} selected={true}/>
+                        <SkillBox logo={<ReactLogo />} title={"REACT JS DEVELOPMENT"} selected={true}/>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <SkillBox logo={<WebDev />} title={"WEB DEVELOPMENT"} selected={true}/>
+                        <SkillBox logo={<WebDev />} title={"HTML & CSS DEVELOPMENT"} selected={true}/>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <SkillBox logo={<Js />} title={"MOBILE DEVELOPMENT"} selected={true}/>
+                        <SkillBox logo={<Js />} title={"JAVASCRIPT DEVELOPMENT"} selected={true}/>
                     </div>
                 </SwiperSlide>
                 
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <SkillBox logo={<Python />} title={"WEB SCRAPING WITH PYTHON"} selected={true}/> 
+                        <SkillBox logo={<Python />} title={"PYTHON DEVELOPMENT"} selected={true}/> 
                     </div>
                 </SwiperSlide>
                 

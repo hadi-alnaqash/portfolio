@@ -6,7 +6,11 @@
     border-radius: 8px;
 
     .content{
-        padding: 16px 16px 23px 16px;
+        display: flex;
+        padding: 16px 16px 20px 16px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
 
         .image{
             margin-bottom: 16px;

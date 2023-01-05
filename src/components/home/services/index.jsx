@@ -14,7 +14,7 @@ const Services = () => {
         <p className='sectionTitle'>The services I offer:</p>
         <div className="boxes">
             <ServiceBox 
-                title={'IMPLEMENT WEB DESIGN'}
+                title={'WEB DESIGN'}
                 logo={<Design />}
                 desc={'I can implement web designs with Figma and Adove XD'}
             />
@@ -27,16 +27,16 @@ const Services = () => {
             <ServiceBox 
                 title={'WEB DEVELOPMENT'}
                 logo={<WebDev />}
-                desc={'I create beautiful interfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS'}
+                desc={'I create beautiful interfaces with simple HTML, CSS, & JavaScript with ReactJS'}
             />
             <ServiceBox 
                 title={'NPM AND NODEJS'}
                 logo={<Js />}
-                desc={'I have a core understanding of NPM. I can also develop general-purpose applications with NodeJS'}
+                desc={'I have a core understanding of NPM. I can also deal with NodeJS'}
                 typeTow={true}
             />
             <ServiceBox 
-                title={'PYTHON DEVELOPMENT'}
+                title={'PYTHON DEVELOPER'}
                 logo={<Python />}
                 desc={'I am an expert python developer. I have experience using the Django framework.'}
             />
