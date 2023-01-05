@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className='footer section__padding'>
         <div className="by">
-            <p>@2022 Hadi Mohammed</p>
-            <p>Fullstack Developer</p>
-            <p>UI Designer</p>
-            <p>Data Analyst</p>
+            <p>@2023 Hadi Mohammed</p>
+            <p>frontend developer</p>
+            <p>JavaScript</p>
+            <p>ReactJS</p>
         </div>
         <div className="links">
           <a href="https://www.facebook.com/"><Facebook /></a> 
